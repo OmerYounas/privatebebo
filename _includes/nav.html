@@ -1,6 +1,6 @@
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header" style="margin-left: 30px;">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 30px;">
       {% for link in site.navbar-links %}
         {% if link[1].first %}
           <li class="navlinks-container {{ site.navbar-classes[forloop.index0].hover-col }}">
